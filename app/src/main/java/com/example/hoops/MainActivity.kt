@@ -11,4 +11,11 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
     }
+
+    fun startGame(view:View){
+        val intent = Intent(this, SelectionActivity::class.java)
+        startActivity(intent)
+
+
+    }
 }
